@@ -1,0 +1,80 @@
+/*----- Medias Queries -----*/
+@media (max-width:50rem){
+    .visible{
+        display: none !important;
+        visibility: hidden !important;
+    }
+    
+    .hidden{
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+      }
+    
+     header ul {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        gap: 50px;
+        position: absolute;
+        top: 14vh;
+        right: -100%;
+        background-color: #000000;
+        height: 86vh;
+        width: 100%;
+        align-items: flex-start !important;
+        transition: right 0.3s ease-in;
+        overflow: auto;
+      }
+    
+      .li__1{
+        margin-top: 20%;
+      }
+      header ul li {
+        margin-right: 0px;
+      }
+    
+      .menu-slide {
+        right: 0%;
+        transition: right 0.3s ease-in;
+      }
+    
+      .cross .bar {
+        opacity: 0;
+      }
+      .cross .bar1{
+        width: 100%;
+        transform: rotate(-45deg) translate(1px, 7px);
+      }
+      .cross .bar2{
+        width: 100%;
+        transform: rotate(45deg) translate(0px, -7px);
+      }
+
+      .dropdown-menu {
+        background-color: #000000 !important;
+        width: 200px !important;
+        height: auto !important;
+        top: -5px;
+        left: 120px;
+      }
+
+    section h1, section h2{
+        font-size: 40px;
+    }
+
+    #myModal{
+        top: 12%;
+    }
+
+    #containerr img{
+        width: 50% !important;
+    }
+
+    #containerr h2{
+        font-size: 40px !important;
+    }
+}
