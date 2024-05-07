@@ -77,4 +77,13 @@
     #containerr h2{
         font-size: 40px !important;
     }
+
+    .container .card{
+      width: 95% !important;
+      height: 80vh !important;
+    }
+    .container .card .content{
+      height: 80vh !important;
+    }
+    
 }
