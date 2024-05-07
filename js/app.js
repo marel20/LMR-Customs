@@ -107,6 +107,13 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.querySelector(".close").addEventListener("click", () => {
             closeModal(modal);
         });
+
+        // Agregar event listener para cerrar modal al hacer clic fuera de él
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                closeModal(modal);
+            }
+        });
     });
 });
 
