@@ -78,6 +78,14 @@
         font-size: 40px !important;
     }
 
+    .company{
+      flex-direction: column !important;
+      align-items: center;
+    }
+    .text__company, .values{
+      width: 95% !important;
+    }
+
     .container .card{
       width: 95% !important;
       height: 80vh !important;
