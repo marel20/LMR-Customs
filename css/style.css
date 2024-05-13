@@ -262,11 +262,11 @@ header ul li a:hover {
     right: 10px;
 }
 .thumbnail .item .content .title{
-    font-weight: 500;
+    font-weight: bold;
+    /* filter: var(--white) 2px 2px; */
+    filter: drop-shadow(var(--white) 2px 2px);
 }
-.thumbnail .item .content .description{
-    font-weight: 300;
-}
+
 /* arrows */
 .arrows{
     position: absolute;
@@ -557,7 +557,6 @@ header ul li a:hover {
     height: 79vh;
     transition: top 0.5s;
     transition-delay: 0.8s;
-    backdrop-filter: blur(15px);
   }
   .container .card:nth-child(1):hover .content{
     top: 0;
@@ -568,7 +567,6 @@ header ul li a:hover {
     width: 100%;
     height: 79vh;
     transition: right 0.5s;
-    backdrop-filter: blur(15px);
     transition-delay: 0.8s;
   }
   .container .card:nth-child(3):hover .content{
@@ -580,7 +578,6 @@ header ul li a:hover {
     width: 100%;
     height: 79vh;
     transition: left 0.5s;
-    backdrop-filter: blur(15px);
     transition-delay: 0.8s;
   }
   .container .card:nth-child(5):hover .content{
@@ -593,7 +590,6 @@ header ul li a:hover {
     height: 79vh;
     transition: bottom 0.5s;
     transition-delay: 0.8s;
-    backdrop-filter: blur(15px);
   }
   .container .card:nth-child(7):hover .content{
     bottom: 0;
@@ -745,6 +741,185 @@ header ul li a:hover {
     margin: 0 auto;
     -ms-zoom: 50%;
 }
+
+/* contact section */
+
+form input, 
+form button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -300%);
+  display: block;
+  width: 90vw;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s cubic-bezier(.4, .25, .8, .3);
+  background: var(--hover);
+}
+
+form input {
+  padding: .25rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--background);
+  outline: 0;
+  background: var(--hover);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: .125rem;
+  transition: all .5s cubic-bezier(.4, .25, .8, .3);
+}
+
+form input::selection {
+  background: rgba(var(--background), 0.25);
+}
+
+form button,
+form .signup-button {
+  padding: .25em 0;
+  border: 0;
+  outline: 0;
+  background: var(--background);
+  color: rgba(var(--black), 0.85);
+  font-size: 2rem;
+  line-height: 3.6rem;
+  letter-spacing: .0625rem;
+  box-shadow: 0 3px 5px 1px rgba(var(--black), 0.25);
+  text-shadow: 0 -2px 0 rgba(var(--black), 0.25), 0 1px 0 rgba(var(--black), 0.2);
+}
+
+form input:focus,
+form button:focus {
+  opacity: 1;
+  transform: translate(-50%, -100%);
+  pointer-events: auto;
+  transition: all .4s cubic-bezier(.1, .45, .1, .85) .5s;
+  z-index: 10;
+}
+
+form input:focus ~ input,
+form input:focus ~ button {
+  transform: translate(-50%, 500%);
+  transition: all .5s ease-in;
+}
+form input:focus ~ label .label-text {
+  transform: translate(-50%, 300%);
+  transition: all .5s ease-in;
+}
+form input:focus ~ .tip {
+  opacity: 1;
+}
+form input:focus ~ .signup-button,
+form button:focus ~ .signup-button {
+  opacity: 0;
+}
+
+form input:focus + label .label-text {
+  opacity: 1;
+  transform: translate(-50%, -100%);
+  transition: all .3s cubic-bezier(.1, .45, .1, .85) .4s;
+}
+form input:focus + label .nav-dot:before {
+  background: darken(var(--background), 5%);
+  box-shadow: 0 0 0 .15rem var(--black), 0 0 .05rem .26rem var(var(--background));
+}
+
+form .tip {
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  opacity: 0;
+  color: var(--black);
+  font-size: .875rem;
+  font-weight: 300;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  text-align: right;
+  transition: opacity .25s .5s;
+}
+
+.signup-button,
+.signup-button-trigger {
+  position:relative ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 90vw;
+  color: var(--white) !important;
+  padding: .25rem 0;
+  line-height: 3.6rem;
+  text-align: center;
+  pointer-events: none;
+  cursor: pointer;
+  transition: opacity .4s .3s;
+}
+
+.signup-button-trigger {
+  opacity: 0;
+  pointer-events: auto;
+}
+
+.label-text {
+  position: fixed;
+  top: calc(50% - 4rem);
+  left: 50%;
+  transform: translate(-50%, -300%);
+  width: 90vw;
+  padding: 3.125rem 0 1.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: .125rem;
+  pointer-events: none;
+  transition: all .4s cubic-bezier(.4, .25, .8, .3) .05s;
+}
+
+.nav-dot {
+  cursor: pointer;
+  position: fixed;
+  padding: .625rem 1.25rem .625rem .625rem;  
+  top: 52%;
+  right: 1.25rem;
+}
+.nav-dot:before {
+    content: '';  
+    display: inline-block;  
+    border-radius: 50%;
+    width: .375rem;
+    height: .375rem;
+    margin-right: .625rem;  
+    position: fixed;
+    background-color: lighten(var(--background), 3%);
+    border: 0;
+    transition: all 0.25s;
+  }
+  .nav-dot:hover:before {
+    width: .625rem;
+    height: .625rem;
+    margin-top: -.125rem;
+    margin-left: -.125rem;
+    background-color: darken(var(--background), 5%);
+  }
+
+
+@for $i from 1 through 5 {
+  label[for="input-#{$i}"] .nav-dot {
+      margin-top: -150px + (25 * $i);
+  }
+}
+form {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
 
 /* footer content */
 footer {
