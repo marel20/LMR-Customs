@@ -22,7 +22,7 @@
         position: absolute;
         top: 14vh;
         right: -100%;
-        background-color: #000000;
+        background-color: var(--background);
         height: 86vh;
         width: 100%;
         align-items: flex-start !important;
@@ -55,15 +55,32 @@
       }
 
       .dropdown-menu {
-        background-color: #000000 !important;
+        background-color: var(--background) !important;
         width: 200px !important;
         height: auto !important;
         top: -5px;
         left: 120px;
       }
 
+      .dropdown-menu li a {
+        font-size: 80%;
+      }
+
     section h1, section h2{
         font-size: 40px;
+    }
+
+    .carousel .list .item .author h1{
+      width: 100% !important;
+      font-weight: bold;
+      font-size: 15px !important;
+      letter-spacing: 7px;
+  }
+    .carousel .list .item .title,
+    .carousel .list .item .topic{
+        font-size: 3em;
+        font-weight: bold;
+        line-height: 1.3em;
     }
 
     #myModal{
@@ -93,5 +110,66 @@
     .container .card .content{
       height: 80vh !important;
     }
+
+    .banner img {
+      max-width: 100% !important;
+    }
+
+    .choose{
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
     
+    .img__choose, .tittles {
+      width: 95%;
+    }
+
+    .img__choose img {
+      width: 80%;
+  }
+
+    .location {
+      flex-direction: column !important;
+    }
+
+    .margin__top {
+      margin-top: 0 !important;
+    }
+
+    .card__location{
+      flex-direction: row !important;
+      gap: 15px;
+      text-align: start !important;
+      width: 95% !important;
+      height: 10vh !important;
+      padding: 15px !important;
+  }
+  .card__location i{
+      background-color: #3b5998;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 15px;
+  }
+
+  .text__slogan h3{
+    margin: 15% auto;
+  }
+
+  .end__footer {
+    flex-direction: column-reverse !important;
+  }
+
+  .social__media{
+    width: 90%;
+    justify-content: center !important;
+    gap: 20px;
+    margin: 5% auto;
+  }
+
+  .copyright-content{
+    width: 95%;
+    margin: 0 auto !important;
+  }
+
 }
