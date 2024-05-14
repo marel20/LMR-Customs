@@ -97,23 +97,35 @@
 
     .company{
       flex-direction: column !important;
-      align-items: center;
+      justify-content: center !important;
+      align-items: center !important;
     }
     .text__company, .values{
       width: 95% !important;
+      text-align: justify;
     }
-
+    .accordion iframe {
+      margin: 10% auto;
+    }
     .container .card{
       width: 95% !important;
-      height: 80vh !important;
+      height: 70vh !important;
     }
     .container .card .content{
-      height: 80vh !important;
+      height: 70vh !important;
+      bottom: -70vh;
     }
 
     .banner img {
       max-width: 100% !important;
     }
+
+    .background__card {
+      width: 100vw;
+      height: auto;
+      background: url('../assets/img/mapa3.jpg');
+      background-position: center;
+  }
 
     .choose{
       flex-direction: column !important;
@@ -155,6 +167,12 @@
   .text__slogan h3{
     margin: 15% auto;
   }
+
+  .name__surname {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
   .end__footer {
     flex-direction: column-reverse !important;
