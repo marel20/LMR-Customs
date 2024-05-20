@@ -411,7 +411,7 @@ header ul li a:hover {
 .btnWsp{
     position: fixed;
     bottom: 3.125rem;
-    right: 1.25rem;
+    left: 1.25rem;
     z-index: 1500 !important;
 }
 /*----- End Navbar Style -----*/
@@ -445,9 +445,13 @@ header ul li a:hover {
     position: fixed;
     line-height: 64px;
     bottom: 100px;
-    right: 30px;
+    left: 30px;
     text-align: center;
     z-index: 100;
+}
+
+.text__justify {
+    text-align: justify;
 }
 
 /* company content */
@@ -513,7 +517,7 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 70px;
     margin: 40px 0;
   }
   .container .card {
@@ -548,16 +552,21 @@ header ul li a:hover {
     /* background: url('../assets/img/import-export.jpg'); */
   }
 
+  .imgBx img {
+    max-width: 100%;
+    height: 50vh;
+  }
+
   .container .card:hover .content{
     bottom: 0px;
     transition-delay: 0s;
   }
   .container .card .content .contentBx h3{
-    color: var(--white);
+    color: var(--background);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.1em;
     text-align: center;
     margin: 5px 0 15px;
@@ -572,7 +581,7 @@ header ul li a:hover {
   }
   .container .card .content .contentBx h3 span{
     font-size: 15px;
-    color: var(--white);
+    color: var(--background);
     font-weight: 300;
     text-transform: initial;
   }
@@ -736,6 +745,7 @@ form{
     color: var(--background) !important;
     font-size: 25px;
 }
+
 
 form textarea{
     width: 100%;
