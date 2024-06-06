@@ -697,7 +697,7 @@ header ul li a:hover {
     border-bottom: 1px solid #57575798;
 }
 
-#icons__services, #icons__services2 {
+#icons__services2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -707,7 +707,7 @@ header ul li a:hover {
     margin: 0 auto;
 }
 
-.card__icon, .card__icon2 {
+.card__icon2 {
     margin: 1% auto;
     width: 20%;
     height: 30vh;
@@ -716,22 +716,17 @@ header ul li a:hover {
     /* border: 1px solid var(--hover); */
 }
 
-.card__icon:nth-child(1), .card__icon:nth-child(2), .card__icon:nth-child(3), .card__icon:nth-child(4){
-    box-shadow: -3px -3px 3px var(--background);
-}
-.card__icon:nth-child(5), .card__icon:nth-child(6), .card__icon:nth-child(7), .card__icon:nth-child(8){
-    box-shadow: 3px 3px 3px var(--background);
-}
+
 
 .card__icon2 {
     box-shadow: 3px 3px 30px var(--background);
 }
 
-.card__icon i, .card__icon2 i {
+.card__icon2 i {
     font-size: 30px;
     margin-bottom: 20%;
 }
-.card__icon h3, .card__icon2 h3 {
+.card__icon2 h3 {
     font-size: 20px;
     font-weight: bold;
 }
