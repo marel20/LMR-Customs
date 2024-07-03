@@ -81,6 +81,7 @@
         font-size: 2.8em;
         font-weight: bold;
         line-height: 1.3em;
+        margin: 10% auto;
     }
 
     #myModal{
@@ -119,6 +120,36 @@
     .banner img {
       max-width: 100% !important;
     }
+
+    .imgBx img {
+      height: 70vh !important;
+    }
+
+    #icons__services2 {
+      flex-direction: column !important;
+    }
+
+    .card__icon2 {
+      margin: 1% auto;
+      width: 80%;
+      height: 20vh;
+      padding: 30px 15px;
+      border-radius: 10px;
+      /* border: 1px solid var(--hover); */
+  }
+  
+  .card__icon2 {
+      box-shadow: 3px 3px 30px var(--background);
+  }
+  
+  .card__icon2 i {
+      font-size: 40px;
+      margin-bottom: 10%;
+  }
+  .card__icon2 h3 {
+      font-size: 30px;
+      font-weight: bold;
+  }
 
     .background__card {
       width: 100vw;
