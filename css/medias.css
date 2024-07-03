@@ -205,6 +205,10 @@
     width: 100%;
 }
 
+  footer {
+    height: 73vh;
+  }
+
   .end__footer {
     flex-direction: column-reverse !important;
   }
@@ -213,7 +217,7 @@
     width: 90%;
     justify-content: center !important;
     gap: 20px;
-    margin: 5% auto;
+    margin: 7% auto;
   }
 
   .copyright-content{
