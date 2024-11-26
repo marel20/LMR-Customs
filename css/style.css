@@ -665,6 +665,7 @@ header ul li a:hover i{
     border: 1px solid var(--hover);
     width: 90%;
     max-width: 100%;
+    border-radius: 15px;
     height: 90vh;
     overflow: auto;
     position: absolute;
@@ -672,6 +673,10 @@ header ul li a:hover i{
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
+}
+
+.modalServices img {
+    border-radius: 5px 25px;
 }
 
 .close {
