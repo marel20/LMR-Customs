@@ -20,6 +20,7 @@
     --hover: #c4c4c4;
     --grey2: #424242;
     --yellow: #ebd755;
+    --golden: #dfaf50ec;
 }
 
 html > body{
@@ -659,7 +660,7 @@ header ul li a:hover i{
 }
 
 .modal-content-services {
-    background-color: var(--grey);
+    background-color: var(--golden);
     margin: auto;
     padding: 20px;
     border: 1px solid var(--hover);
@@ -673,6 +674,15 @@ header ul li a:hover i{
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
+}
+
+#modal-text {
+    width: 70%;
+    margin: 1% auto;
+    text-align: justify;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: var(--grey2) 3px 3px;
 }
 
 .modalServices img {
@@ -745,12 +755,14 @@ header ul li a:hover i{
     padding: 30px 15px;
     border-radius: 10px;
     /* border: 1px solid var(--hover); */
+    box-shadow: 3px 3px 30px var(--background);
+    transition: 0.5s ease;
 }
 
-
-
-.card__icon2 {
-    box-shadow: 3px 3px 30px var(--background);
+.card__icon2:hover {
+    box-shadow: 3px 3px 30px var(--golden);
+    transition: 0.5s ease;
+    cursor: pointer;
 }
 
 .card__icon2 i {
@@ -921,7 +933,7 @@ footer .hr {
     color: var(--white);
 }
 .social__media i:hover{
-    background-color: var(--hover);
+    background-color: var(--golden);
     color: var(--black);
     transition: 0.5s ease;
 }
@@ -934,5 +946,5 @@ footer .hr {
     color: var(--white);
 }
 .copyright a b:hover{
-    color: var(--grey2);
+    color: var(--golden);
 }
