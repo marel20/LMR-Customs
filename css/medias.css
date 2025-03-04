@@ -203,7 +203,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-}
+  }
+
+  #modal-text{
+    width: 95%;
+  }
+
+  .modal-content-services img {
+    width: 95%;
+    margin: 5% auto;
+  }
 
   footer {
     height: 73vh;
