@@ -58,7 +58,7 @@
         background-color: var(--background) !important;
         width: 200px !important;
         height: auto !important;
-        top: -5px;
+        top: -4vh;
         left: 120px;
       }
 
@@ -212,6 +212,10 @@
   .modal-content-services img {
     width: 95%;
     margin: 5% auto;
+  }
+
+  .card__icon2 h3 {
+    font-size: 20px !important;
   }
 
   footer {
